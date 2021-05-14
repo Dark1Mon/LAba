@@ -12,25 +12,11 @@
     "lint": "eslint . --ext .js,.ts,.tsx --max-warnings 0",
     "format": "prettier --write .",
     "tsc": "tsc -p tsconfig.json --noEmit",
-    "deploy": "npm run build && gh-pages -d dist"
-  },
-  "keywords": [
-    "React",
-    "2048",
-    "Typescript",
-    "style-components",
-    "pwa"
-  ],
-  "author": "Kai Wang",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kwrush/react-2048.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kwrush/react-2048/issues"
+    "deploy": "npm run build && gh-pages -d dist",
+    "test": "jest"
   },
   "dependencies": {
+    "jest": "^26.6.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1",
